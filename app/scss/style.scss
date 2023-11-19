@@ -1,5 +1,6 @@
 @import "_media";
 @import "_fonts";
+@import "_variable";
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -40,7 +41,53 @@ html {
 }
 
 body {
-    background-color: red;
-    margin-bottom: 10px;
+    color: $mainBlack;
+    font-size: $mainFontSize;
+    line-height: $mainLineHeight;
+    font-family: $mainFontFamily;
+}
+
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header {
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 140px;
+        padding: 30px 0;
+    }
+}
+.logo{
+    margin-bottom: 30px;
+}
+
+.menu{
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        gap: 0 65px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
+.user-action{
     display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+}
+search {
+    button{
+        margin-left: 80px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+ input {
+display: none;
+}
 }
