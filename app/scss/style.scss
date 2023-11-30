@@ -1,0 +1,141 @@
+@import "_media";
+@import "_fonts";
+@import "_variable";
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: $mainBlack;
+    font-size: $mainFontSize;
+    line-height: $mainLineHeight;
+    font-family: $mainFontFamily;
+}
+
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header {
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 140px;
+        padding: 30px 0;
+    }
+}
+.logo{
+    margin-bottom: 30px;
+}
+
+.menu{
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        gap: 0 65px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
+.user-action{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+}
+search {
+    button{
+        margin-left: 80px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+ input {
+display: none;
+}
+}
+
+.top {
+    background-image: url(../images/main-top-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+
+    &__inner {
+        min-height: 500px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &__title{
+        max-width: 780px;
+        font-size: 60px;
+        font-family: $secondFontFamily;
+        margin-bottom: 20px;
+        font-weight: 400;
+        line-height: 1;
+    }
+    &__text{
+        max-width: 560px;
+        font-size: 24px;
+        font-family: $secondFontFamily;
+        margin-bottom: 48px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+.blockquote{
+    text-align: center;
+    max-width: 704px;
+    margin: 150px auto;
+    &__text{
+        
+        color: #151618;
+        text-align: center;
+        
+        font-family: $secondFontFamily;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: normal;
+    }
+}
+
